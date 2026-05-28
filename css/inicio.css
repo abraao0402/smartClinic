@@ -1,0 +1,119 @@
+.inicio {
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.inicio-container {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.inicio-informacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.informacoes-titulo {
+  margin-top: 2rem;
+  font-size: 4.25rem;
+  line-height: 1.0;
+  font-weight: 900;
+  max-width: 20ch;
+}
+.informacoes-apresentacao {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  font-weight: 590;
+  max-width: 30ch;
+}
+.informacoes-especialidades {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 590;
+  max-width: 30ch;
+}
+.inicio-imagem {
+  overflow: hidden;
+  border-radius: 4rem;
+  width: 100%;
+  max-width: 550px;
+  justify-self: center;
+  min-width: 0;
+}
+
+.inicio-imagem img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4rem;
+}
+
+.informacoes-agendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 30ch;
+  width: 100%;
+  margin: 1.5rem 0 0;
+  padding: 16px 32px;
+  border-radius: 40px;
+  background-color: #737373;
+}
+
+.informacoes-agendar a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .inicio-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+    margin: 1.5rem auto 2rem;
+  }
+  .inicio-informacoes {
+    align-items: center;
+  }
+  .informacoes-texto {
+    width: 100%;
+  }
+  .informacoes-titulo {
+    font-size: 3rem;
+    margin-top: 0px;
+    margin-bottom:20px;
+    text-align: center;
+    width: 100%;
+  }
+  .informacoes-apresentacao,
+  .informacoes-especialidades,
+  .informacoes-agendar {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top:10px;
+    font-size: 1.4rem;
+  }
+  .informacoes-agendar {
+    margin: 1.5rem auto 0;
+    padding: 16px 24px;
+  }
+  .inicio-imagem {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-row: 1;
+  }
+  .inicio-imagem img {
+    border-radius: 4rem;
+  }
+}

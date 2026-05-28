@@ -1,0 +1,39 @@
+header {
+  background-color: #cde0cd;
+  display: flex;
+  justify-content: center;
+  font-family: "Didact Gothic", sans-serif;
+}
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.nav-item {
+  text-decoration: none;
+  color: #737373;
+  font-weight: 590;
+  transition: color 0.3s ease;
+  font-size: 20px;
+}
+.nav-item:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    flex-direction: row;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .nav-item {
+    font-size: 18px;
+    text-align: center;
+  }
+}

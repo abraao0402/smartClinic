@@ -1,0 +1,198 @@
+.localizacao {
+  display: flex;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.localizacao img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.localizacao-info {
+  background-color: #737373;
+  color: white;
+  padding: 50px 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.localizacao-info h3 {
+  font-size: 14px;
+  color: #bbb;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.localizacao-info h2 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.localizacao-clinica {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.localizacao-clinica span {
+  display: block;
+  font-size: 14px;
+  color: #ccc;
+  font-weight: 400;
+}
+
+.localizacao-endereco {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  border-left: 4px solid #25d366;
+}
+
+.localizacao-endereco p {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.localizacao-endereco .label {
+  color: #bbb;
+  font-size: 12px;
+}
+
+.localizacao-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.localizacao-link:hover {
+  gap: 15px;
+}
+
+.localizacao-link::before {
+  content: "→";
+  font-size: 20px;
+}
+
+.localizacao-mapa {
+  flex: 1;
+  min-height: 350px;
+}
+
+@media (max-width: 768px) {
+  .localizacao {
+    flex-direction: column;
+    margin: 30px 20px;
+  }
+
+  .localizacao-info {
+    padding: 30px 20px;
+    gap: 15px;
+  }
+
+  .localizacao-info h2 {
+    font-size: 32px;
+  }
+
+  .localizacao-info h3 {
+    font-size: 12px;
+  }
+
+  .localizacao-clinica {
+    font-size: 14px;
+  }
+
+  .localizacao-endereco {
+    padding: 15px;
+  }
+
+  .localizacao-endereco p {
+    font-size: 13px;
+  }
+
+  .localizacao-link {
+    font-size: 14px;
+  }
+
+  .localizacao-mapa {
+    min-height: 250px;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+  .localizacao {
+    flex-direction: column;
+    margin: 30px 20px;
+  }
+
+  .localizacao-info {
+    padding: 40px 30px;
+  }
+
+  .localizacao-info h2 {
+    font-size: 36px;
+  }
+
+  .localizacao-mapa {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .localizacao {
+    margin: 20px 10px;
+  }
+
+  .localizacao-info {
+    padding: 30px 20px;
+    gap: 15px;
+  }
+
+  .localizacao-info h2 {
+    font-size: 28px;
+  }
+
+  .localizacao-info h3 {
+    font-size: 12px;
+  }
+
+  .localizacao-clinica {
+    font-size: 14px;
+  }
+
+  .localizacao-endereco {
+    padding: 15px;
+  }
+
+  .localizacao-endereco p {
+    font-size: 13px;
+  }
+
+  .localizacao-link {
+    font-size: 14px;
+  }
+
+  .localizacao-mapa {
+    min-height: 200px;
+  }
+}
