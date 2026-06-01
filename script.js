@@ -15,9 +15,9 @@ linksInternos.forEach((link) => {
   link.addEventListener("click", scrollToSection);
 });
 const imgMedico = document.querySelector("#imagem-medico");
-let corHeader = document.body.
+
 function clicar() {
   console.log("clicou");
-  
 }
+
 imgMedico.addEventListener("click", clicar);
